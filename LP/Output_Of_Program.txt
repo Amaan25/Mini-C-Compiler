@@ -1,0 +1,10 @@
+Token ID		Token Value
+--------		------------
+
+Keyword:		int
+IDENTIFIER:		i
+Semi-colon:		;
+IDENTIFIER:		b
+Assigment operator:	=
+IDENTIFIER:		i
+Semi-colon:		;

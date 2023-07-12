@@ -1,0 +1,64 @@
+#include<stdio.h>
+
+#define size 100
+
+int main()
+{
+    int abc = 0;
+    float ty = 0;
+    if(abc == 0)
+    {
+    	int abc = 6;
+    	{
+    		int abc = 78;
+    	}
+    }else
+    {
+    }
+    else
+    {}
+    else bh = 0;
+    int 12++;
+    return 0;
+}
+
+int main()
+{
+	init_symbol();					//to initialise symbol table
+	init_symbol_table_with_keywords();		//to initialise table with keywords
+	/* yyin and yyout as pointer
+	of File type */
+	extern FILE *yyin, *yyout;
+
+	/* yyin points to the file input.txt
+	and opens it in read mode*/
+	yyin = fopen("Input.c", "r");		//Input file
+
+
+
+	/* yyout points to the file output.txt
+	and opens it in write mode*/
+	
+	 FILE *fptr;
+	
+
+	fptr = fopen("Output_Of_Program.txt", "w");		//Output file
+	if (fptr == NULL)
+	{
+		printf("Error opening file!\n");
+		exit(0);
+	}
+	else
+	{
+		fprintf(fptr, "Token ID		Token Value\n");
+		fprintf(fptr, "--------		------------\n\n");
+		
+		fclose(fptr);
+	}	
+
+
+	yyout = fopen("Output_Of_Program.txt", "a");
+
+	yylex();
+	return 0;
+}
